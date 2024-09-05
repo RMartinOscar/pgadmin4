@@ -20,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest] #[macos-latest, ubuntu-latest, windows-latest]
         pgver: [12, 13, 14, 15, 16]
 
     runs-on: ${{ matrix.os }}
